@@ -1,6 +1,6 @@
 {
   "name": "img2prompt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read the prompt information for generating images from stable diffusion.",
   "main": "./build/index.js",
   "module": "./build/index.js",
