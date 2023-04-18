@@ -1,21 +1,55 @@
 {
   "name": "img2prompt",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Read the prompt information for generating images from stable diffusion.",
+  "main": "./build/index.js",
+  "module": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./build/index.d.ts",
+        "default": "./build/index.mjs"
+      },
+      "require": {
+        "types": "./build/index.d.ts",
+        "default": "./build/index.js"
+      }
+    },
+    "./package.json": "./package.json"
   },
-  "keywords": [],
+  "files": [
+    "build/index.js",
+    "build/index.mjs",
+    "build/index.d.ts"
+  ],
+  "repository": "git@github.com:lxfriday/img2prompt.git",
+  "scripts": {
+    "build": "tsup"
+  },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.15.11",
     "prettier": "^2.8.7",
     "tsup": "^6.7.0",
-    "tsx": "^3.12.6"
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "dist-exiftool": "^10.53.0"
-  }
+  },
+  "keywords": [
+    "stable diffusion",
+    "prompt",
+    "img2prompt",
+    "midjourney",
+    "get prompt",
+    "generate prompt",
+    "stable diffusion prompt",
+    "text to img",
+    "img to text",
+    "img2text",
+    "text2img"
+  ]
 }
