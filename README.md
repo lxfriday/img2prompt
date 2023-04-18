@@ -1,8 +1,13 @@
+<div align="center">
+<img width="200" src="./assets/logo.png" alt="generate by stable diffusion"/>
+</a>
+</div>
+
 # img2prompt
 
 Read the prompt information for generating images from stable diffusion.
 
-[demo](./assets/demo.png)
+![demo](./assets/demo.png)
 
 ## Install
 
