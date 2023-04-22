@@ -52,6 +52,32 @@ Negative prompt: fat, naked, nude, paintings, sketches, (worst quality:2), (low 
 Steps: 25, Sampler: Euler a, CFG scale: 5, Seed: 356983177, Size: 768x1080, Model hash: 7107c05c1c, Model: dalcefoPainting_3rd, Hashes: {"lora:clearvae_main": "600345c503", "lora:Moxin_10": "3fd52c707c", "lora:elegantHanfuRuqun_v10": "495901d34f", "model": "7107c05c1c"}
 ```
 
+use `readImageV2`
+
+```typescript
+import path from 'path'
+import { readImageV2 } from '../src'
+;(async () => {
+  console.log('info', await readImageV2(path.join(__dirname, './a.png')))
+})()
+```
+
+output
+
+```js
+{
+  prompt: '(masterpiece),(best quality),(ultra-detailed), (full body:1.2), 1girl,chibi,cute, smile, open mouth, flower, outdoors, hanfu, music, jacket, blush, tree, :3, shirt, longhair, cherry blossoms, green headwear, blurry, white hair, blush stickers, long sleeves, bangs, black hair, pink flower, (beautiful detailed face), (beautiful detailed eyes),  <lora:blindbox_v1mix:1>,',
+  negativePrompt: '(low quality:1.3), (worst quality:1.3), fat,  easynegative',
+  sampler: 'euler a',
+  cfgScale: '5',
+  seed: '1640334232',
+  size: '768x768',
+  modelHash: '4199bcdd14',
+  model: 'revanimated_v122',
+  steps: '30'
+}
+```
+
 ## License
 
 MIT
